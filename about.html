@@ -51,5 +51,19 @@
   <div class="copy">&copy; 2026 Kron / Tsukiyomi En-musubi</div>
 </footer>
 </div>
+
+<!-- CTAクリック計測用スクリプト -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.cta').forEach(function(button) {
+    button.addEventListener('click', function() {
+      gtag('event', 'affiliate_click', {
+        'link_url': this.href,
+        'page_type': document.title
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
