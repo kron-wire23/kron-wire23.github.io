@@ -9,6 +9,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9PXY6FEEC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y9PXY6FEEC');
+</script>
+
 </head>
 <body>
 <div class="pr-note">本ページはアフィリエイト広告（PR）を含みます</div>
@@ -44,5 +54,18 @@
   <div class="copy">&copy; 2026 Kron / Tsukiyomi En-musubi</div>
 </footer>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.cta').forEach(function(button) {
+    button.addEventListener('click', function() {
+      gtag('event', 'affiliate_click', {
+        'link_url': this.href,
+        'page_type': document.title
+      });
+    });
+  });
+});
+</script>
 </body>
 </html>
